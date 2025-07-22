@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" context="width=device-width,initial-scale=1.0">
+        <title>React Demo</title>
+        <!--Bootstrap library-->
+        <link rel="styleshet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/boostrap/dist/js/bootstrap.bundle.js"></script>
+        <!--React library-->
+        <script src="../node_modules/react/umd/react.development.js"></script>
+        <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+        <script src="../node_modules/@babel/standalone/babel.js"></script>
+        <script type="text/babel">
+            function Login(){
+            return(
+                <div className="d-flex justify-content-center mt-5">
+                    <form className="border alert alert-dismissible alert-warning  border-2 p-4 rounded rounded-2">
+
+                    <h2 className="bi bi-person-circle">User Login</h2>
+                    <button data-bs-dismiss="alert" className="btn btn-close"></button>
+                    <d1>
+                        <dt>User Name</dt>
+                        <dd><input type="text" className="form-control"/></dd>
+                         <dt>Password</dt>
+                        <dd><input type="password" className="form-control"/></dd>
+                        <dd className="form-switch"><input className="form-check-input"type="checkbox"/> keep me signed in </dd>
+
+                    </d1>
+                        <button className="btn btn-warning w-100">Login</button>
+                        </form>
+                        </div>
+            )
+        }
+        const root =ReactDOM.createRoot(document.getElementById("root"));
+        root.render(
+            <Login/>
+        )
+        </script>
+    </head>
+   
+    <body>
+        <noscript>please enable the JavaScript from the browser</noscript>
+        <div id="root"></div>
+    </body>
+</html>
